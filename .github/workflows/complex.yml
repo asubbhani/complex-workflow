@@ -8,15 +8,15 @@ jobs:
    steps:
    - run: date
   windows:
-   runs-on: windwows-latest
+   runs-on: windows-latest
    steps:
    - run: date
   macos:
-   runs-on: macs-latest
+   runs-on: macos-latest
    steps:
    - run: date
   depends:
    needs: [ubuntu, windows, macos]
-   runs-on: macs-latest
+   runs-on: macos-latest
    steps:
    - run: date
